@@ -5,4 +5,13 @@ struct HistoryView: View {
 
 var body: some View {
 VStack {
+    Text("History")
+    .font(.largeTitle)
+
+    List(history, id: \ .self) { item in
+    Text(item)
+                }
+            }
+        }
+    }
 
