@@ -5,4 +5,9 @@ struct ContentView: View {
 
 var body: some View {
 TabView {
+    TimerView(history: $history)
+    .tabItem {
+    Label("Timer", systemImage: "timer")
+    }
+
 
