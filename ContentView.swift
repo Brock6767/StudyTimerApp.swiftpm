@@ -10,4 +10,11 @@ TabView {
     Label("Timer", systemImage: "timer")
     }
 
+    HistoryView(history: $history)
+    .tabItem {
+    Label("History", systemImage: "list.bullet")
+    }
+    }
+    }
+    }
 
