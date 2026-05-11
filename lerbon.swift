@@ -35,4 +35,31 @@ Button("Skip") {
 switchMode()
 }
 .padding()
+}
+
+Text(isBreak ? "Take a break" : "Focus now")
+.foregroundColor(.gray)
+}
+.onReceive(timer) { _ in
+if isRunning && time > 0 {
+time -= 1
+}
+
+if time == 0 {
+switchMode()
+}
+}
+}
+
+func switchMode() {
+isRunning = false
+
+if isBreak == false {
+history.append("Studied 25 minutes")
+}
+
+isBreak.toggle()
+time = isBreak ? 300 : 1500
+}
+}
 
