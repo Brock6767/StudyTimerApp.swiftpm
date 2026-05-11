@@ -11,9 +11,14 @@ TabView {
     }
 
     HistoryView(history: $history)
-    .tabItem {
-    Label("History", systemImage: "list.bullet")
-    }
+        .tabItem {
+            Label("History", systemImage: "list.bullet")
+            
+           
+
+            
+            
+        }
     }
     }
     }
