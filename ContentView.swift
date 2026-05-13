@@ -14,7 +14,10 @@ TabView {
         .tabItem {
             Label("History", systemImage: "list.bullet")
             
-           
+            StreakView()
+                .tabItem {
+                    Label("Streak", systemImage: "flame.fill")
+                }
 
             
             
